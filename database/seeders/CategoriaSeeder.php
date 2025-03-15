@@ -14,15 +14,21 @@ class CategoriaSeeder extends Seeder
     public function run(): void
     {
         DB::table('categorias')->insert([
-            'nome' => 'Sapato'
+            'nome' => 'Sapato',
+            'created_at' => now(),
+            'updated_at' => now()
         ]);
 
         DB::table('categorias')->insert([
-            'nome' => 'Meia'
+            'nome' => 'Meia',
+            'created_at' => now(),
+            'updated_at' => now()
         ]);
 
         DB::table('categorias')->insert([
-            'nome' => 'Tênis'
+            'nome' => 'Tênis',
+            'created_at' => now(),
+            'updated_at' => now()
         ]);
 
 
