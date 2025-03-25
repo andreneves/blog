@@ -321,6 +321,11 @@ return [
             //'can' => 'manage-blog',
         ],
         [
+            'text' => 'Postagem',
+            'url' => 'postagem',
+            //'can' => 'manage-blog',
+        ],
+        [
             'text' => 'pages',
             'url' => 'admin/pages',
             'icon' => 'far fa-fw fa-file',
