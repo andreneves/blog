@@ -1,6 +1,11 @@
 @extends('adminlte::page')
 
 @section('content')
+
+<link rel="stylesheet" href="{{ url("/richtexteditor/rte_theme_default.css") }}" />
+<script type="text/javascript" src="{{ url("/richtexteditor/rte.js") }}"></script>
+<script type="text/javascript" src='{{ url("/richtexteditor/plugins/all_plugins.js") }}'></script>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -37,12 +42,16 @@
                         <input type="text" value="{{ $postagem->titulo }}" name="titulo" class="form-control">
 
                         <label>Descrição:</label>
-                        <textarea name="descricao" rows="5" cols="33" class="form-control">
+                        <textarea id="inp_editor1" name="descricao" rows="5" cols="33" class="form-control">
                             {{ $postagem->descricao }}
                         </textarea>
 
                         <button type="submit" class="btn btn-primary">ENVIAR</button>
                     </form>
+
+                    <script>
+                        var editor1 = new RichTextEditor("#inp_editor1");
+                    </script>
 
             </div>
         </div>
