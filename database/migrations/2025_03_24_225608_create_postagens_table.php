@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('postagens', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('categoria_id');
+            $table->bigInteger('user_id');
             $table->string('titulo');
             $table->longText('descricao');
             $table->timestamps();

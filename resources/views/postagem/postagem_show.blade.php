@@ -11,6 +11,7 @@
 
                     <p><strong>Id: </strong>{{ $postagem->id }}</p>
                     <p><strong>Categoria: </strong>{{ $postagem->categoria->nome }}</p>
+                    <p><strong>Autor: </strong>{{ $postagem->autor->name }}</p>
                     <p><strong>Título: </strong>{{ $postagem->titulo }}</p>
                     <p><strong>Descrição: </strong>{!! $postagem->descricao !!}</p>
                     <p><strong>Criação: </strong>{{ $postagem->created_at }}</p>
