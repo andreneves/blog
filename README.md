@@ -74,7 +74,7 @@ php artisan migrate
 ```
 
 ## 9) Rode os SEEDs (inserção dos dados nas tabelas)
-Abra o terminal e execute o código abaix:
+Abra o terminal e execute o código abaixo:
 ```bash
 php artisan db:seed
 ```
