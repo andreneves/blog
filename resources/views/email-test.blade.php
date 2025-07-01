@@ -75,12 +75,12 @@
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="email" class="form-label">Email de Destino</label>
-                                                <input type="email" class="form-control" id="email" name="email" 
+                                                <input type="email" class="form-control" id="email" name="email"
                                                        value="teste@exemplo.com" required>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="subject" class="form-label">Assunto</label>
-                                                <input type="text" class="form-control" id="subject" name="subject" 
+                                                <input type="text" class="form-control" id="subject" name="subject"
                                                        value="Teste Personalizado - Mailpit" required>
                                             </div>
                                             <div class="mb-3">
@@ -128,10 +128,10 @@
                                         </ul>
                                     </div>
                                 </div>
-                                
+
                                 <div class="alert alert-info mt-3">
-                                    <strong>💡 Dica:</strong> Após enviar um email, acesse o Mailpit em 
-                                    <a href="http://localhost:8025" target="_blank">localhost:8025</a> 
+                                    <strong>💡 Dica:</strong> Após enviar um email, acesse o Mailpit em
+                                    <a href="http://localhost:8025" target="_blank">localhost:8025</a>
                                     para visualizar os emails capturados.
                                 </div>
                             </div>

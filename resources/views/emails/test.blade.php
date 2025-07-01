@@ -64,7 +64,7 @@
 
         <div class="content">
             <h2>🎉 Parabéns! O Mailpit está funcionando!</h2>
-            
+
             <div class="message">
                 <p><strong>Mensagem:</strong></p>
                 <p>{{ $data['message'] }}</p>
@@ -83,7 +83,7 @@
             <p>Este email foi enviado como teste para verificar a configuração do Mailpit no seu ambiente de desenvolvimento Laravel.</p>
 
             <div style="text-align: center; margin: 30px 0;">
-                <a href="http://localhost:8025" 
+                <a href="http://localhost:8025"
                    style="background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; display: inline-block;">
                     🔗 Acessar Mailpit (localhost:8025)
                 </a>

@@ -46,7 +46,7 @@ class TestEmailCommand extends Command
 
             $this->info('✅ Email enviado com sucesso!');
             $this->info('🎯 Verifique o Mailpit em: http://localhost:8025');
-            
+
             $this->newLine();
             $this->comment('📊 Configuração atual do email:');
             $this->table(
