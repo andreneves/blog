@@ -5,10 +5,20 @@ use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PostagemController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\EmailTestController;
 
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+
+// -----------------------------------------------------------------------------
+// TESTE DE EMAIL (MAILPIT)
+// -----------------------------------------------------------------------------
+
+Route::get('/email-test-form', [EmailTestController::class, 'testForm'])->name('email.form');
+Route::get('/email-test', [EmailTestController::class, 'sendTestEmail'])->name('email.test');
+Route::post('/email-custom', [EmailTestController::class, 'sendCustomEmail'])->name('email.custom');
+
 
 // -----------------------------------------------------------------------------
 // SITE

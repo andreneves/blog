@@ -32,14 +32,52 @@ Altere esta parte do código para ficar igual esta abaixo.
 -  DB_USERNAME=root
 -  DB_PASSWORD=
 
-## 5) Instale as depedências
+## 5) Configure o email (Mailpit)
+Se você estiver usando o Laragon, o Mailpit já está incluído. Configure as seguintes variáveis no arquivo .env:
+-  MAIL_MAILER=smtp
+-  MAIL_HOST=127.0.0.1
+-  MAIL_PORT=1025
+-  MAIL_USERNAME=null
+-  MAIL_PASSWORD=null
+-  MAIL_ENCRYPTION=null
+-  MAIL_FROM_ADDRESS="noreply@blog.local"
+-  MAIL_FROM_NAME="${APP_NAME}"
+
+Para acessar o Mailpit e visualizar os emails enviados pelo sistema, acesse: http://localhost:8025
+
+## 6) Instale as depedências
 Abra o terminal e execute o código entre aspas "composer install"
 
-## 6) Gere a APP_KEY (chave de criptografia)
+## 7) Gere a APP_KEY (chave de criptografia)
 Abra o terminal e execute o código entre aspas "php artisan key:generate"
 
-## 7) Rode as migrations (criação das tabelas)
+## 8) Rode as migrations (criação das tabelas)
 Abra o terminal e execute o código entre aspas "php artisan migrate"
 
-## 8) Rode os SEEDs (inserção dos dados nas tabelas)
+## 9) Rode os SEEDs (inserção dos dados nas tabelas)
 Abra o terminal e execute o código entre aspas "php artisan db:seed"
+
+## 10) Testar o Mailpit
+Após configurar tudo, você pode testar o envio de emails de várias formas:
+
+### Teste via Navegador (Interface Web)
+Acesse: `http://localhost/blog/email-test-form`
+- Teste rápido: envio de email predefinido
+- Teste personalizado: envio com dados customizados
+
+### Teste via Terminal (Comando Artisan)
+```bash
+# Teste básico
+php artisan email:test
+
+# Teste com email personalizado
+php artisan email:test seu@email.com
+
+# Teste com assunto e mensagem personalizados
+php artisan email:test seu@email.com --subject="Meu Teste" --message="Minha mensagem personalizada"
+```
+
+### Teste via Rota (API)
+Acesse diretamente: `http://localhost/blog/email-test`
+
+Todos os emails enviados aparecerão no Mailpit: http://localhost:8025
