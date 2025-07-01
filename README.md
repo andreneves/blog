@@ -25,12 +25,12 @@ Abra o terminal e execute o código entre aspas "copy .env.example .env"
 
 ## 4) Mude o nome do banco no arquivo .env
 Altere esta parte do código para ficar igual esta abaixo.
-### DB_CONNECTION=mysql
-### DB_HOST=127.0.0.1
-### DB_PORT=3306
-### DB_DATABASE=blog
-### DB_USERNAME=root
-### DB_PASSWORD=
+-  DB_CONNECTION=mysql
+-  DB_HOST=127.0.0.1
+-  DB_PORT=3306
+-  DB_DATABASE=blog
+-  DB_USERNAME=root
+-  DB_PASSWORD=
 
 ## 5) Instale as depedências
 Abra o terminal e execute o código entre aspas "composer install"
